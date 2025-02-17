@@ -6,7 +6,7 @@ import './index.css';
 const AboutUs = () => {
   return (
     <div className="about-container">
-      <Navbar />
+      {/* <Navbar /> */}
       
       <div className="hero-section">
         <h1>EMPOWERING DAIRY FARMERS</h1>
