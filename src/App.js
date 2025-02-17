@@ -1,7 +1,13 @@
 import './App.css';
-import DairyJourneyPage from './Components/DairyJourneyPage';
+import DairyLanding from './Components/DairyJourneyPage';
+// import DairyJourneyPage from './Components/DairyJourneyPage';
+import DairyServices from './Components/DairyServices';
+import Footer from './Components/Footer';
 import HeroSection from './Components/Landingpage';
-import LandingPage from './Components/Landingpage';
+// import LandingPage from './Components/Landingpage';
+import ContactSection from './Components/offers';
+import ServicesSection from './Components/ServicesSection';
+import Testimony from './Components/testimonies';
 
 function App() {
   return (
@@ -9,6 +15,12 @@ function App() {
       <HeroSection/>
 {/* <LandingPage/> */}
 {/* <DairyJourneyPage/> */}
+<DairyLanding/>
+<DairyServices/>
+<ServicesSection/>
+<Testimony/>
+<ContactSection/>
+<Footer/>
     </div>
   );
 }
