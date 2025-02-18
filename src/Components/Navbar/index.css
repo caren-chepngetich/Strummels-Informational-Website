@@ -1,3 +1,4 @@
+/* Navbar.css */
 .navbar-container {
     width: 100%;
     position: relative;
@@ -37,19 +38,13 @@
     text-decoration: none;
   }
   
-  /* Navigation links container for centering */
-  .nav-links-container {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    margin: 0 32px;
-  }
-  
   /* Navigation links styles */
   .nav-links {
     display: flex;
     gap: 32px;
+    margin: 0 auto;
     justify-content: center;
+    align-items: center;
   }
   
   .nav-links a {
@@ -71,15 +66,15 @@
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    min-width: 120px;
   }
   
   .register-btn:hover {
     background-color: #3d0f4a;
   }
   
-  /* Hide mobile register link on desktop */
-  .register-link-mobile {
-    display: none !important;
+  .mobile-register {
+    display: none;
   }
   
   /* Hamburger menu styles */
@@ -208,7 +203,7 @@
       padding: 80px 32px;
       transition: 0.3s ease-in-out;
       box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-      gap: 24px;
+      margin: 0;
     }
   
     .nav-links.active {
@@ -217,14 +212,16 @@
   
     .nav-links a {
       font-size: 18px;
+      margin: 16px 0;
     }
   
-    /* Show mobile register link and hide desktop button */
-    .register-link-mobile {
-      display: block !important;
+    .mobile-register {
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
     }
   
-    .register-btn.desktop-only {
+    .desktop-register {
       display: none;
     }
   
