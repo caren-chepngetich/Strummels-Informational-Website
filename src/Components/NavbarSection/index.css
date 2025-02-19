@@ -1,0 +1,77 @@
+/* Navbar Styles */
+.navbar-container {
+  width: 100%;
+  background-color: #521462;
+  padding: 10px 0;
+  position: relative;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-decoration: black;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Content Section */
+.content-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  display: block;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 80%;
+}
+
+/* 🌟 MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  /* Stack navbar vertically */
+  .nav-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Reduce content width for smaller screens */
+  .content {
+    width: 90%;
+    padding: 15px;
+  }
+}
